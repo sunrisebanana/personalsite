@@ -4,7 +4,8 @@ import {
   Container,
   Menu,
   Image,
-  Visibility
+  Visibility,
+  Icon
 } from 'semantic-ui-react'
 
 //todo: move these to module.css
@@ -35,19 +36,21 @@ export default class Navbar extends Component {
         <Visibility onBottomPassed={this.stickNavbar} onBottomVisible={this.unStickNavbar} once={false}>
             <Menu fixed={menuFixed ? 'top' : undefined} style={menuFixed ? fixedMenuStyle : menuStyle} inverted={true}>
                 <Container>
-                    <Menu.Item>
-                        <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
-                        My Website
+                    <Menu.Item href='/'>
+                        <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+                        It's My Website
                     </Menu.Item>
-                    <Menu.Item>
-                        <Link href="/">
-                            <a>Home</a>
-                        </Link>
+                    <Menu.Item href='/about'>
+                        About
                     </Menu.Item>
-                    <Menu.Item>
-                        <Link href="/about">
-                            <a>About</a>
-                        </Link>
+                    <Menu.Item href='https://github.com/sunrisebanana'>
+                        <Icon link name='github' size='large'/>
+                    </Menu.Item>
+                    <Menu.Item href='https://www.linkedin.com/in/jaime-herzog-75826713b/'>
+                        <Icon link name='linkedin' size='large'/>
+                    </Menu.Item>
+                    <Menu.Item href='https://lichess.org/@/sunrisebanana'>
+                        <Icon link name='chess' size='large'/>
                     </Menu.Item>
                 </Container>
             </Menu>
