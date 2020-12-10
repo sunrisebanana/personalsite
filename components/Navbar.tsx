@@ -49,14 +49,6 @@ export default class Navbar extends Component {
                             <a>About</a>
                         </Link>
                     </Menu.Item>
-                    <Menu.Item>
-                        <Link href="/users">
-                            <a>Users List</a>
-                        </Link>
-                    </Menu.Item>
-                    <Menu.Item>
-                        <a href="/api/users">Users API</a>
-                    </Menu.Item>
                 </Container>
             </Menu>
         </Visibility>
