@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import 'semantic-ui-css/semantic.min.css'
 
 const IndexPage = () => (
-  <Layout title="Jaime Herzog's Personal Website">
+  <Layout title="Home">
     <div>
       <h1>Welcome to my Website! 👋</h1>
       <p>

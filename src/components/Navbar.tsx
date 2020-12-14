@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'next/link'
 import {
   Container,
   Menu,
@@ -36,20 +35,20 @@ export default class Navbar extends Component {
         <Visibility onBottomPassed={this.stickNavbar} onBottomVisible={this.unStickNavbar} once={false}>
             <Menu fixed={menuFixed ? 'top' : undefined} style={menuFixed ? fixedMenuStyle : menuStyle} inverted={true}>
                 <Container>
-                    <Menu.Item href='/'>
+                    <Menu.Item aria-label="Home" href='/'>
                         <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
                         It's My Website
                     </Menu.Item>
-                    <Menu.Item href='/about'>
+                    <Menu.Item aria-label="About" href='/about'>
                         About
                     </Menu.Item>
-                    <Menu.Item href='https://github.com/sunrisebanana'>
+                    <Menu.Item aria-label="Github" href='https://github.com/sunrisebanana'>
                         <Icon link name='github' size='large'/>
                     </Menu.Item>
-                    <Menu.Item href='https://www.linkedin.com/in/jaime-herzog-75826713b/'>
+                    <Menu.Item aria-label="Linkedin" href='https://www.linkedin.com/in/jaime-herzog-75826713b/'>
                         <Icon link name='linkedin' size='large'/>
                     </Menu.Item>
-                    <Menu.Item href='https://lichess.org/@/sunrisebanana'>
+                    <Menu.Item aria-label="Lichess" href='https://lichess.org/@/sunrisebanana'>
                         <Icon link name='chess' size='large'/>
                     </Menu.Item>
                 </Container>
