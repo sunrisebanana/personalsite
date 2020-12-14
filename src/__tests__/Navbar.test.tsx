@@ -4,12 +4,12 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import Navbar from "../components/Navbar";
-import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/extend-expect';
+
 
 describe("<Navbar />", () => {
     test("Should render navbar with all components", () => {
       render(<Navbar/>);
-      screen.debug();
       expect(screen.getByLabelText('Home')).toBeInTheDocument();
       expect(screen.getByLabelText('About')).toBeInTheDocument();
       expect(screen.getByLabelText('Github')).toBeInTheDocument();

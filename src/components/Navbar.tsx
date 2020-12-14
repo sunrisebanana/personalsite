@@ -34,7 +34,7 @@ export default class Navbar extends Component {
         return (
         <Visibility onBottomPassed={this.stickNavbar} onBottomVisible={this.unStickNavbar} once={false}>
             <Menu fixed={menuFixed ? 'top' : undefined} style={menuFixed ? fixedMenuStyle : menuStyle} inverted={true}>
-                <Container>
+                <Container aria-label="Navbar">
                     <Menu.Item aria-label="Home" href='/'>
                         <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
                         It's My Website

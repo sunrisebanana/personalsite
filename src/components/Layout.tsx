@@ -19,7 +19,7 @@ const Layout = ({ children, title = 'Jaime Herzog\'s Personal Website' }: Props)
       <Navbar/>
     </header>
     {children}
-    <footer className={styles.footer}>
+    <footer aria-label="Footer" className={styles.footer}>
       <hr />
       <span>Thanks for reading :)</span>
     </footer>
