@@ -20,6 +20,7 @@ const menuStyle = {
 const fixedMenuStyle = {
     border: '1px solid',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+    marginBottom: '1em',
 }
 
 export default class Navbar extends Component {
@@ -32,7 +33,7 @@ export default class Navbar extends Component {
         const { menuFixed } = this.state
         return (
         <Visibility onBottomPassed={this.stickNavbar} onBottomVisible={this.unStickNavbar} once={false}>
-            <Menu fixed={menuFixed ? 'top' : undefined} style={menuFixed ? fixedMenuStyle : menuStyle} inverted={true}>
+            <Menu style={menuStyle}/* fixed={menuFixed ? 'top' : undefined} style={menuFixed ? fixedMenuStyle : menuStyle}  */inverted={true}>
                 <Container aria-label="Navbar">
                     <Menu.Item aria-label="Home" href='/'>
                         <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
