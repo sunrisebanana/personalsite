@@ -13,7 +13,6 @@ const menuStyle = {
     borderRadius: 0,
     boxShadow: 'none',
     marginBottom: '1em',
-    marginTop: '4em',
     transition: 'box-shadow 0.5s ease, padding 0.5s ease',
     
 }

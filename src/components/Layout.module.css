@@ -7,10 +7,11 @@
     background-color: beige;
 }
 .body{
-    position: absolute;
+    position: relative;
     background-color: beige;
     top: 0;
-    bottom: 10px;
     width: 100%;
     text-align: center;
+    flex-grow: 1;
+    height: 100%;
 }
