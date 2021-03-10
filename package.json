@@ -4,7 +4,7 @@
   "homepage": "http://www.jaimeherzog.com",
   "scripts": {
     "predeploy": "npm run build && next export",
-    "deploy": "gh-pages -b master -d out",
+    "deploy": "gh-pages -d out",
     "dev": "next",
     "build": "next build",
     "start": "next start",
