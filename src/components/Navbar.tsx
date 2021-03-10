@@ -17,12 +17,12 @@ const menuStyle = {
     
 }
 
-const fixedMenuStyle = {
+/* const fixedMenuStyle = {
     border: '1px solid',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
     marginBottom: '1em',
 }
-
+ */
 export default class Navbar extends Component {
     state = {
         menuFixed: false,
@@ -30,7 +30,7 @@ export default class Navbar extends Component {
     stickNavbar = () => this.setState({ menuFixed: true })
     unStickNavbar = () => this.setState({ menuFixed: false })
     render() {
-        const { menuFixed } = this.state
+        /* const { menuFixed } = this.state */
         return (
         <Visibility onBottomPassed={this.stickNavbar} onBottomVisible={this.unStickNavbar} once={false}>
             <Menu style={menuStyle}/* fixed={menuFixed ? 'top' : undefined} style={menuFixed ? fixedMenuStyle : menuStyle}  */inverted={true}>
