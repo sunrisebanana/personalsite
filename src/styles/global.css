@@ -1,0 +1,8 @@
+html,
+body{
+    background-color: beige;
+}
+#__next {
+    height: 100%; 
+    position: relative;
+}
