@@ -1,7 +1,10 @@
 {
   "name": "with-typescript",
   "version": "1.0.0",
+  "homepage": "http://www.jaimeherzog.com",
   "scripts": {
+    "predeploy": "npm run build && next export",
+    "deploy": "gh-pages -b master -d out",
     "dev": "next",
     "build": "next build",
     "start": "next start",
