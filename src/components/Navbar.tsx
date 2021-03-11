@@ -66,7 +66,7 @@ export default class Navbar extends Component {
             </Grid>
             
             <Grid>
-            <Grid.Row only='mobile or tablet'>
+            <Grid.Row only='mobile tablet'>
             <Menu widths={2} borderless position="middle" fixed={'top'} style={menuFixed ? fixedMenuStyle : menuStyle} >
                 <Container aria-label="Navbar">
                     <Menu.Item aria-label="Home" href='/'>
