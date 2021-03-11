@@ -8,7 +8,6 @@ import {
 const AboutPage = () => (
   <Layout title="About">
     <Container text textAlign={'left'}>
-    <br/>
       <Header size='huge'>About</Header>
       <br/>
       This is my personal portfolio website, which contains my resume and some social media links, as well as some other personal projects as I build them.

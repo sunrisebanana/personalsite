@@ -5,7 +5,8 @@ import {
   Image,
   Visibility,
   Icon,
-  Grid
+  Grid,
+  Dropdown
 } from 'semantic-ui-react'
 import _ from 'underscore'
 
@@ -26,7 +27,10 @@ const fixedMenuStyle = {
     background: 'white',
 }
 const leftItems = [
-    { as: 'a', key:'about', content: "About", href: "/about"}
+    { as: 'a', key:'about', content: "About", href: "/about"},
+    { as: 'a', key:'contact', content: "Contact", href: "/contact"},
+    { as: 'a', key:'jeffsmap', content: "Jeff's Map", href: "/jeffsmap"},
+
 ]
 const rightItems = [
     { as: 'a', key:'github', content: <Icon link name='github' size='large'/>, href: "https://github.com/sunrisebanana"},
@@ -54,8 +58,13 @@ export default class Navbar extends Component {
                         <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
                         It's My Website
                     </Menu.Item>
-                    
-                    {_.map(leftItems, item => <Menu.Item {...item} />)}
+                    <Menu.Item>
+                    <Dropdown floating className='icon' text='Menu' >
+                        <Dropdown.Menu>
+                            {_.map(leftItems, item => <Menu.Item {...item} />)}
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    </Menu.Item>
                     <Menu.Menu position="right">
                         {_.map(rightItems, item => <Menu.Item {...item} />)}
                     </Menu.Menu>
@@ -73,9 +82,13 @@ export default class Navbar extends Component {
                         <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
                         It's My Website
                     </Menu.Item>
-                    
-                    {_.map(leftItems, item => <Menu.Item {...item} />)}
-                    
+                    <Menu.Item>
+                    <Dropdown floating className='icon' text='Menu'>
+                        <Dropdown.Menu>
+                            {_.map(leftItems, item => <Menu.Item {...item} />)}
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    </Menu.Item>
                 </Container>
             </Menu>
             </Grid.Row>
