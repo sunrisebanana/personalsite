@@ -1,16 +1,16 @@
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 2.5rem; 
-    background-color: beige;
+    height: 3.5rem; 
+
 }
 .body{
     position: relative;
-    background-color: beige;
     text-align: center;
     min-height: 100vh;
 }
 .contentwrap {
-    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
