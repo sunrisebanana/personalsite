@@ -17,7 +17,7 @@ export default class MobileNavbar extends Component {
     render() {
         return (
             <Grid fixed={'bottom'}>
-                <Grid.Row columns={1} only='mobile or tablet'>       
+                <Grid.Row columns={1} only='mobile tablet'>       
                 <Grid.Column>
                     <Menu widths={3}>
                     {_.map(items, item => <Menu.Item {...item}/>)}

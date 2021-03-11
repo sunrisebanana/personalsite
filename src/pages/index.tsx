@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import 'semantic-ui-css/semantic.min.css'
-import { Container } from 'next/app'
+import { Container } from 'semantic-ui-react'
 
 const IndexPage = () => (
   <Layout title="Home">
