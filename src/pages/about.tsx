@@ -7,7 +7,7 @@ import {
 
 const AboutPage = () => (
   <Layout title="About">
-    <Container text textAlign={'justified'}>
+    <Container text textAlign={'left'}>
     <br/>
       <Header size='huge'>About</Header>
       <br/>
