@@ -23,6 +23,7 @@ const Layout = ({ children, title = 'Jaime Herzog\'s Personal Website' }: Props)
 
     <div className={styles.contentwrap}>
       <Container text>
+        <br/>
         {children}
       </Container>
     </div>
