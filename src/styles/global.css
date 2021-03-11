@@ -1,8 +1,9 @@
-html,
-body{
-    background-color: beige;
-}
+
 #__next {
     height: 100%; 
     position: relative;
+}
+img {
+    max-width: 100%;
+    width: 100%;
 }

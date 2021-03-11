@@ -4,24 +4,35 @@ import {
   Menu,
   Image,
   Visibility,
-  Icon
+  Icon,
+  Grid
 } from 'semantic-ui-react'
+import _ from 'underscore'
 
 //todo: move these to module.css
-const menuStyle = {
+ const menuStyle = {
     border: 'none',
     borderRadius: 0,
     boxShadow: 'none',
     marginBottom: '1em',
     transition: 'box-shadow 0.5s ease, padding 0.5s ease',
-    
+    background: 'white',
 }
 
-/* const fixedMenuStyle = {
+const fixedMenuStyle = {
     border: '1px solid',
     boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
     marginBottom: '1em',
-} */
+    background: 'white',
+}
+const leftItems = [
+    { as: 'a', key:'about', content: "About", href: "/about"}
+]
+const rightItems = [
+    { as: 'a', key:'github', content: <Icon link name='github' size='large'/>, href: "https://github.com/sunrisebanana"},
+    { as: 'a', key:'linkedin', content: <Icon link name='linkedin' size='large'/>, href: "https://www.linkedin.com/in/jaime-herzog-75826713b"},
+    { as: 'a', key:'chess', content: <Icon link name='chess' size='large'/>, href: "https://lichess.org/@/sunrisebanana"}
+]
 
 export default class Navbar extends Component {
     state = {
@@ -30,29 +41,45 @@ export default class Navbar extends Component {
     stickNavbar = () => this.setState({ menuFixed: true })
     unStickNavbar = () => this.setState({ menuFixed: false })
     render() {
-        /* const { menuFixed } = this.state */
+        const { menuFixed } = this.state 
         return (
-        <Visibility onBottomPassed={this.stickNavbar} onBottomVisible={this.unStickNavbar} once={false}>
-            <Menu style={menuStyle}/* fixed={menuFixed ? 'top' : undefined} style={menuFixed ? fixedMenuStyle : menuStyle}  */inverted={true}>
+              
+        <Visibility onBottomPassed={this.stickNavbar} onBottomVisible={this.unStickNavbar}  offset={[0, -50]} once={false}>
+
+            <Grid>
+            <Grid.Row only='computer'>
+            <Menu secondary fixed={'top'} style={menuFixed ? fixedMenuStyle : menuStyle}  >
+                <Container text aria-label="Navbar">
+                    <Menu.Item aria-label="Home" href='/'>
+                        <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+                        It's My Website
+                    </Menu.Item>
+                    
+                    {_.map(leftItems, item => <Menu.Item {...item} />)}
+                    <Menu.Menu position="right">
+                        {_.map(rightItems, item => <Menu.Item {...item} />)}
+                    </Menu.Menu>
+                </Container>
+            </Menu>
+
+            </Grid.Row>
+            </Grid>
+            
+            <Grid>
+            <Grid.Row only='mobile or tablet'>
+            <Menu widths={2} borderless position="middle" fixed={'top'} style={menuFixed ? fixedMenuStyle : menuStyle} >
                 <Container aria-label="Navbar">
                     <Menu.Item aria-label="Home" href='/'>
                         <Image  alt='me' size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
                         It's My Website
                     </Menu.Item>
-                    <Menu.Item aria-label="About" href='/about'>
-                        About
-                    </Menu.Item>
-                    <Menu.Item aria-label="Github" href='https://github.com/sunrisebanana'>
-                        <Icon link name='github' size='large'/>
-                    </Menu.Item>
-                    <Menu.Item aria-label="Linkedin" href='https://www.linkedin.com/in/jaime-herzog-75826713b/'>
-                        <Icon link name='linkedin' size='large'/>
-                    </Menu.Item>
-                    <Menu.Item aria-label="Lichess" href='https://lichess.org/@/sunrisebanana'>
-                        <Icon link name='chess' size='large'/>
-                    </Menu.Item>
+                    
+                    {_.map(leftItems, item => <Menu.Item {...item} />)}
+                    
                 </Container>
             </Menu>
+            </Grid.Row>
+            </Grid>
         </Visibility>
         )
         
