@@ -12,7 +12,7 @@ const JeffsMapDyn = dynamic(
 )
 const JeffsMapPage = () => (
 
-  <Layout title="Home">
+  <Layout title="Jeff's Map of Algonquin Park">
 
 
       <Header size='huge'>Jeff's Map of Algonquin Park</Header>
