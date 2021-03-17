@@ -14,7 +14,7 @@ img {
 }
 @media (max-width: 991px) {
     .leaflet-container {
-        height: 65vh;
+        height: 60vh;
     }
 }
 .contentwrap {
