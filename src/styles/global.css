@@ -7,8 +7,15 @@ img {
     max-width: 100%;
     width: 100%;
 }
-.leaflet-container {
-    height: 70vh;
+@media (min-width: 991px) {
+    .leaflet-container {
+        height: 78vh;
+    }
+}
+@media (max-width: 991px) {
+    .leaflet-container {
+        height: 65vh;
+    }
 }
 .contentwrap {
     padding-top: 5rem;
@@ -27,5 +34,5 @@ img {
 }
 .full-bleed {
     width: 100%;
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
 }
