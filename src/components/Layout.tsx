@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import Navbar from './Navbar'
 import styles from './Layout.module.css'
-import { Container, } from 'semantic-ui-react'
 import MobileNavbar from './MobileNavbar'
 
 type Props = {
@@ -21,11 +20,10 @@ const Layout = ({ children, title = 'Jaime Herzog\'s Personal Website' }: Props)
         <Navbar/>
       </header>
 
-    <div className={styles.contentwrap}>
-      <Container text>
-        <br/>
-        {children}
-      </Container>
+    <div className="contentwrap">
+      <div className="main"></div>
+      <br/>
+      {children}
     </div>
     <footer aria-label="Footer" className={styles.footer}>
 
