@@ -21,8 +21,7 @@ const Layout = ({ children, title = 'Jaime Herzog\'s Personal Website' }: Props)
       </header>
 
     <div className="contentwrap">
-      <div className="main"></div>
-      <br/>
+      
       {children}
     </div>
     <footer aria-label="Footer" className={styles.footer}>

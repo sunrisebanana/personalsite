@@ -8,15 +8,15 @@ img {
     width: 100%;
 }
 .leaflet-container {
-    height: 500px;
+    height: 70vh;
 }
 .contentwrap {
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-bottom: 4rem;
     display: grid;
     grid-template-columns:
         minmax(0,1fr)
-        min(80ch, 100%)
+        min(90ch, 100%)
         minmax(0,1fr)
 }
 .main {
