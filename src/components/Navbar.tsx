@@ -27,9 +27,9 @@ const fixedMenuStyle = {
     background: 'white',
 }
 const leftItems = [
-    { as: 'a', key:'about', content: "About", href: "/about"},
-    { as: 'a', key:'contact', content: "Contact", href: "/contact"},
     { as: 'a', key:'jeffsmap', content: "Jeff's Map", href: "/jeffsmap"},
+    { as: 'a', key:'resume', content: "Resume", href: "/resume"},
+    { as: 'a', key:'contact', content: "Contact", href: "/contact"},
 
 ]
 const rightItems = [

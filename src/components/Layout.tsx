@@ -21,11 +21,10 @@ const Layout = ({ children, title = 'Jaime Herzog\'s Personal Website' }: Props)
         <Navbar/>
       </header>
 
-    <div className={styles.contentwrap}>
-      <Container text>
-        <br/>
-        {children}
-      </Container>
+    <div className="contentwrap">
+      <div className="main"></div>
+      <br/>
+      {children}
     </div>
     <footer aria-label="Footer" className={styles.footer}>
 
