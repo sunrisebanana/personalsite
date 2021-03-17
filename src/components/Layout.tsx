@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import Navbar from './Navbar'
 import styles from './Layout.module.css'
-import { Container, } from 'semantic-ui-react'
 import MobileNavbar from './MobileNavbar'
 
 type Props = {
