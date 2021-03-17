@@ -43,7 +43,7 @@ export default class JeffsMap extends Component {
                 >
                 <PlaceMarker/>
                 <TileLayer
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                attribution={'&copy; <a href="https://www.algonquinmap.com/">Jeff\'s Map</a>, Thanks to Jeff'}
                 url="./tiles/{z}/{x}/{y}.png"
                 />
                 <Marker position={[10, 10]}>
