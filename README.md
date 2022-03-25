@@ -12,3 +12,15 @@ and scroll down on desktop to see how the nicely the Navbar follows!
 For a live deployment, go to http://jaimeherzog.com
 
 Thanks for reading!
+
+# Development instructions: 
+
+To get started, clone the repo and run:
+```
+npm install
+python generateResume.py
+npm run dev
+```
+
+Then go to http://localhost:3000. Happy hunting!
+
