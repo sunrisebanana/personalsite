@@ -7,8 +7,15 @@ img {
     max-width: 100%;
     width: 100%;
 }
-.leaflet-container {
-    height: 700px;
+@media screen and (min-width: 800px) {
+    .leaflet-container {
+        height: 700px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .leaflet-container {
+        height: 500px;
+    }
 }
 .contentwrap {
     padding-top: 4rem;
