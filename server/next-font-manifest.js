@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{"/contact":[],"/":[],"/resume":[]},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}';
