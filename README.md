@@ -27,3 +27,4 @@ and try again.
 If you're having issues generating the resume svg file, ensure texlive and inkscape are installed, with inkscape being added to the PATH.
 Then go to http://localhost:3000. Happy hunting!
 
+To deploy changes, see https://github.com/gitname/react-gh-pages.
