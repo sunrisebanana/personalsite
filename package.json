@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "http://www.jaimeherzog.com",
   "scripts": {
-    "predeploy": "npm run build && next export && touch out/.nojekyll && echo '_next' >> out/.nojekyll",
+    "predeploy": "npm run build && next export && echo '_next' >> out/.nojekyll",
     "deploy": "gh-pages -d out -t true",
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
