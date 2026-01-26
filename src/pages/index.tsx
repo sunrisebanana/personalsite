@@ -20,8 +20,14 @@ const IndexPage = () => (
       and I think I enjoy my solution quite a bit. Additionally, check out my resume, which I created in latex and converted to HTML,
       and scroll down on desktop to see how the nicely the Navbar follows!
       <br/><br/>
-      If you would like to see more about my honours project I completed to graduate at Carleton, click 
-      <a href='https://service.scs.carleton.ca/content/honours-project-jaime-herzog-april-16-2020-655pm'> here!</a>
+      If you would like to see the Git repository for this website, click 
+      <a target="_blank" href='https://github.com/sunrisebanana/personalsite'> here! </a>
+      If you would like to see my honours project I completed to graduate at Carleton, click 
+      <a target="_blank" href='https://github.com/sunrisebanana/ShotDetectionInvestigation/blob/master/shotdetection.py'> here </a>
+      for the code itself and 
+      <a target="_blank" href='https://github.com/sunrisebanana/ShotDetectionInvestigation/blob/master/Honours%20Project%20Report/Honours%20Project%20Report.pdf'> here </a>
+      for the report on the results of my investigation.
+      <br/><br/>
     </Container>
   </Layout>
 )

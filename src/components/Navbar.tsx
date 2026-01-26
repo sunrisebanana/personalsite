@@ -27,15 +27,15 @@ const fixedMenuStyle = {
     background: 'white',
 }
 const leftItems = [
-    { as: 'a', key:'jeffsmap', content: "Jeff's Map", href: "https://mapsbyjeff.com/"},
+    // { as: 'a', key:'jeffsmap', content: "Jeff's Map", href: "https://mapsbyjeff.com/"},
     { as: 'a', key:'resume', content: "Resume", href: "/resume"},
     { as: 'a', key:'contact', content: "Contact", href: "/contact"},
 
 ]
 const rightItems = [
-    { as: 'a', key:'github', content: <Icon link name='github' size='large'/>, href: "https://github.com/sunrisebanana"},
-    { as: 'a', key:'linkedin', content: <Icon link name='linkedin' size='large'/>, href: "https://www.linkedin.com/in/jaime-herzog-75826713b"},
-    { as: 'a', key:'chess', content: <Icon link name='chess' size='large'/>, href: "https://lichess.org/@/sunrisebanana"}
+    { as: 'a', key:'github', content: <Icon link name='github' size='large'/>, target:"_blank", href: "https://github.com/sunrisebanana"},
+    { as: 'a', key:'linkedin', content: <Icon link name='linkedin' size='large'/>, target:"_blank", href: "https://www.linkedin.com/in/jaime-herzog-75826713b"},
+    { as: 'a', key:'chess', content: <Icon link name='chess' size='large'/>, target:"_blank", href: "https://lichess.org/@/sunrisebanana"}
 ]
 
 export default class Navbar extends Component {

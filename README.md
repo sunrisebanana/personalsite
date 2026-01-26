@@ -24,7 +24,7 @@ npm run dev
 If you run into issues, delete your node_modules, run 
 ```npm install --save typescript @types/node@17.0.0 @types/react@17.0.0 @types/react-dom@17.0.0```
 and try again.
-If you're having issues generating the resume svg file, ensure texlive and inkscape are installed, with inkscape being added to the PATH.
+If you're having issues generating the resume svg file, ensure texlive and inkscape are installed, with inkscape being added to the PATH if you're using Windows.
 Then go to http://localhost:3000. Happy hunting!
 
 To deploy changes, see https://github.com/gitname/react-gh-pages.
