@@ -22,7 +22,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.6in,top=0.3in,right=0.6in,bottom=0.3in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.3in,right=0.5in,bottom=0in]{geometry} % Document margins
 
 \name{Jaime Herzog} % Your name
 \address{Toronto, Ontario \\ 905 - 380 - 5271} % Your address
@@ -30,6 +30,14 @@
 
 \begin{document}
 
+% %----------------------------------------------------------------------------------------
+% %   BRANDING SECTION
+% %----------------------------------------------------------------------------------------
+
+\begin{rSection}{Software Developer}
+\item Dedicated Software Engineer with a specialization in Java development and a desire to bring important ideas to life. Proven ability to solve complex problems effectively and bring a feature from zero to one with full ownership. Excellent communication skills sharpened by coordinating feature timelines and requirements with clients.
+
+\end{rSection}
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
@@ -37,10 +45,10 @@
 \begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & Java, Python, C++, SQL \\
+Languages & Java, JavaScript, TypeScript, Python, C++, SQL \\
 Protocols \& APIs & XML, JSON, SOAP, REST \\
-Frameworks & Flask, React, Spring Framework, Hibernate, JSP, JSTL\\
-Tools & Git, GitHub, Docker, SVN, Mercurial, Jenkins \\
+Frameworks & Flask, React, Spring Framework, Spring Boot, Hibernate, JSP, JSTL\\
+Tools & Git, GitHub, Docker, SVN, Mercurial, Jenkins, ChatGPT \\
 Methodologies & Agile, Project Planning, Solutions Design
 
 \end{tabular}
@@ -54,31 +62,25 @@ Methodologies & Agile, Project Planning, Solutions Design
 
 %------------------------------------------------
 \begin{rSection}{Experience}
-\begin{rSubsection}{Modern Campus}{July 2022 - November 2025}{Software Developer}{Toronto, ON}
-\item Design and implement new features for both the Staff and Public view of the Lifelong Learning Extended Education student information system according to client requirements and specifications, working with business PoC's to ensure desired outcomes are achieved for our customers using Java EE, JSP, JSTL, and Hibernate to transform backend data into frontend solutions
-\item Refactor and update obsolete code with multiple points of impact to manage technical debt in an evolving product with over twenty years of active development
-\item Lead and owned the implementation of a custom payment processor for Lifelong Learning Extended Education's payment system, which supports refunds and voiding transactions, coordinating with key external points of contact to define expected behavior to enable transactions for a top rated university
+\begin{rSubsection}{Modern Campus}{\textbf{July 2022 - November 2025}}{Software Developer}{Toronto, ON}{Designed and implemented new features for the Lifelong Learning product, a Student Information System enabling post secondary institutions to manage  student enrollment and data using Java EE, JSP, JSTL and Hibernate, resolving over 100 tickets per year}
+\item Refactored and updated obsolete coding patterns and deprecated library method calls in the Lifelong Learning system to ensure security and data integrity is maintained and code re-usability is maximized
+\item Built out a comprehensive API suite using Spring Framework to externalize key internal student data objects in a generic JSON format, allow clients to integrate the product's key data points into their own systems
+\item Implemented a custom payment processor integration for Lifelong Learning's payment system handling transaction life-cycle management, refunds and voids, coordinating with external points of contact to define expected behavior to enable transactions for a high priority client with a tight deployment schedule
 \item Designed and implemented custom export functionality for a priority client's custom external data management system, ensuring data is mapped correctly from LLEEE to Blue and data validity is maintained 
 \end{rSubsection}
 
-\begin{rSubsection}{Oproma Inc.}{March 2021 - July 2022}{Full Stack Software Developer}{Ottawa, ON}
-\item Design and implement new features for both the frontend and backend of Oproma’s next generation
-Secure File Sharing product using Java EE for backend API development, and various Javascript library
-for the frontend work such as Handlebars and RequireJS
-\item Coordinate with team members to meet release deadlines using an Agile methodology, driving sprint
-reviews on a bi-weekly basis and participating in regular stand-ups
-\item Improved the CI/CD structure for a product under active development by implementing the Jenkins
-plugin for Gitlab, enforcing test coverage in merge requests and significantly reducing time spent merging
-develop to master
-\item Worked with cross functional partners (sales, engineering, product) as the primary technical contact of a high visibility legacy system written in VB.net
-\item Collaboratively dictate and adhere to coding standards enforced at the project level
+\begin{rSubsection}{Oproma Inc.}{\textbf{March 2021 - July 2022}}{Full Stack Software Developer}{Ottawa, ON}{Designed and implemented new features for both the frontend and backend of a next generation Secure File Sharing product using Java EE for backend API development, and various Javascript library for the frontend work such as Handlebars and RequireJS}
+\item Coordinated with team members to meet release deadlines using an Agile methodology, driving sprint reviews on a bi-weekly basis and participating in regular stand-ups
+\item Improved the CI/CD structure for a product in active development by implementing the Jenkins plugin for Gitlab, enforcing test coverage in merge requests and significantly reducing time spent on expensive merges
+\item Worked with cross functional partners (sales, engineering, product) as the primary technical contact of a high visibility legacy system written in VB.net to ensure system functionality and correctness
+\item Collaboratively established and adhered to coding standards enforced at the project level
 \end{rSubsection}
 
-%------------------------------------------------
-\begin{rSubsection}{Infosys Ltd.}{November 2020 - March 2021}{Drupal Developer}{Ottawa, ON}
-\item Implementing visual and functional requirements for the CanadaBuys project using Drupal custom module development leveraging PHP
-\item Assisted QA team with test plan execution in French language version of project under significant time crunch, ensuring visual and functional features are as specified in visual design documents
-\end{rSubsection}
+% %------------------------------------------------
+% \begin{rSubsection}{Infosys Ltd.}{\textbf{November 2020 - March 2021}}{Drupal Developer}{Ottawa, ON}{}
+% \item Implemented visual and functional requirements for the CanadaBuys project using Drupal custom module development leveraging PHP
+% \item Assisted QA team with test plan execution in French language version of project under significant time crunch, ensuring visual and functional features are as specified in visual design documents
+% \end{rSubsection}
 
 %------------------------------------------------
 %\begin{rSubsection}{CIBC}{January 2019 - August 2019}{Intermediate Developer Co-op}{Toronto, ON}
@@ -90,21 +92,16 @@ develop to master
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
+% 	PROJECTS SECTION
+% ----------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
 
-\begin{rSection}{Education}
 
-{\bf Carleton University} \hfill {September 2015 - May 2020} \\ 
-B.S. in Computer Science, Honours COOP, Algorithms stream, Minor in Mathematics  \\
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-% \begin{rSection}{Projects}
+\begin{rSubsection}{Shot Boundary Detection Honours Project}{\textbf{January 2020 - April 2020}}{Developer/Designer}{Ottawa, ON}{}
+\item Implemented multiple shot boundary detection algorithms in Python, Colour Histogram comparison and Edge Change Ratio using Canny Edge Detection, and analyzed their effectiveness on video game live streaming content
+\item Documented my methodology, test data and findings in a detailed report, which concludes that the algorithms examined have practical applications depending on the camera perspective used in the test data
+\end{rSubsection}
 
 % \begin{rSubsection}{Brackit}{January 2020 - March 2020}{Developer/Designer}{}
 % \item Prepared conceptual proposal detailing user stories and use cases of Brackit, a mobile app designed to run and display tournaments supporting multiple formats, for both tournament organizers and attendees
@@ -112,7 +109,18 @@ B.S. in Computer Science, Honours COOP, Algorithms stream, Minor in Mathematics 
 % \item Conducted a demo of the completed product and presented a completed design document for the Brackit app, using UML class diagrams to illustrate the system’s backend and frontend
 % \end{rSubsection}
 
-% \end{rSection}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Carleton University} \hfill {\textbf{September 2015 - May 2020}} \\ 
+Bachelor of Science, BSc Computer Science, Honours COOP, Algorithms stream, Minor in Mathematics  \\
+
+\end{rSection}
+
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
