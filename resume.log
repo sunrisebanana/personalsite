@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  3 FEB 2026 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  3 FEB 2026 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -171,7 +171,7 @@ live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><f:/texlive/2025
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><f:/texlive/2025/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb><f:/texlive/2025/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume.pdf (1 page, 80076 bytes).
+Output written on resume.pdf (1 page, 80054 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
